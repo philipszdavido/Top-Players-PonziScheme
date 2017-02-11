@@ -1,0 +1,557 @@
+﻿
+#features {
+	background: #090909 url(../images/features-bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	color: white;
+}
+#features .section-intro h1 {
+	color: white;
+}
+#features .section-intro h5 {
+	color: rgba(255, 255, 255, 0.5);
+}
+#features .section-intro p {
+	color: rgba(255, 255, 255, 0.7);
+}
+.features-content {
+	max-width: 1200px;
+}
+.features-list {
+	margin-top: 1.2rem;
+	text-align: center;
+}
+.features-list .feature {
+	margin-bottom: 1.2rem;
+	padding: 0 32px;
+}
+.features-list .icon {
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+.features-list .icon i {
+	font-size: 4.8rem;
+}
+.features-list .h05 {
+	font-size: 1.7rem;
+	line-height: 1.765;
+	color: #05bca9;
+	margin-bottom: 1.8rem;
+}
+
+/**
+ * responsive:
+ * features
+ * -
+ */
+
+@media only screen and (max-width:768px) {
+	.features-content {
+		max-width: 600px;
+	}
+	.features-list .feature {
+		padding: 0 15px;
+	}
+}
+@media only screen and (max-width:600px) {
+	.features-list .feature {
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	.features-list .feature {
+		padding: 0;
+	}
+}
+
+
+/** 
+ * ===================================================================
+ * pricing section
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#pricing {
+	background: #EAEAED;
+	padding-top: 12rem;
+	padding-bottom: 9.6rem;
+}
+.pricing-content {
+	margin-top: 6.6rem;
+	max-width: 1280px;
+}
+.pricing-content .bgrid {
+	margin-bottom: 3.6rem;
+}
+.pricing-content .price-block {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.pricing-content .price-block .top-part,
+.pricing-content .price-block .bottom-part {
+	padding: 3.9rem 1.5rem;
+}
+.pricing-content .price-block .top-part {
+	background: #58687b;
+	color: #FFFFFF;
+	padding-bottom: 2.4rem;
+	position: relative;
+}
+.pricing-content .price-block .bottom-part {
+	padding-top: 2.4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	background:#AAAAAA;
+}
+.pricing-content .price-block .plan-title {
+	color: #FFFFFF;
+	padding-bottom: 2.4rem;
+	margin-bottom: 1.2rem;
+	font-size: 2.4rem;
+	position: relative;
+}
+.pricing-content .price-block .plan-title::after {
+	display: block;
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 80px;
+	height: 1px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -40px;
+}
+.pricing-content .price-block .plan-price {
+	font-family: "raleway-bold", sans-serif;
+	font-size: 5rem;
+	line-height: 1;
+	margin-bottom: .6rem;
+}
+.pricing-content .price-block .plan-price sup {
+	font-size: 2.4rem;
+	top: -1.5rem;
+	margin-right: 3px;
+}
+.pricing-content .price-block .price-month {
+	margin-bottom: 1.2rem;
+	font-family: "raleway-bold", sans-serif;
+	font-size: 1.6rem;
+}
+.pricing-content .price-block .price-meta {
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.8rem;
+}
+.pricing-content .price-block .button {
+	color: #353F49;
+	padding: 0 5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pricing-content .price-block .button:hover,
+.pricing-content .price-block .button:focus {
+	background: #58687b;
+	color: #FFFFFF;
+}
+.pricing-content .price-block .features {
+	list-style: none;
+	font-family: "raleway-bold", sans-serif;
+	font-size: 1.5rem;
+	color: rgba(0, 0, 0, 0.4);
+	margin: .6rem 0 1.8rem 0;
+}
+.pricing-content .price-block .features li {
+	padding: .6rem 0;
+	border-bottom: 1px solid #EAEAED;
+}
+.pricing-content .price-block .features li strong {
+	color: #353F49;
+	font-family: "raleway-bold", serif;
+	margin-right: 5px;
+}
+.pricing-content .price-block .features li:last-child {
+	border: none;
+}
+.pricing-content .primary .top-part {
+	background: #05bca9;
+}
+.pricing-content .primary .top-part::before {
+	content: attr(data-info);
+	display: block;
+	min-height: 48px;
+	line-height: 48px;
+	width: 75%;
+	text-align: center;
+	color: #FFFFFF;
+	background: #38424e;
+	font-family: "raleway-heavy", sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 500;
+	border-radius: 5px;
+}
+
+/**
+ * responsive:
+ * pricing
+ * -
+ */
+
+@media only screen and (max-width:1140px) {
+	.pricing-content {
+		max-width: 800px;
+	}
+	.pricing-content .bgrid {
+		width: 50%;
+		clear: none;
+	}
+	.pricing-content .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+}
+@media only screen and (max-width:600px) {
+	.pricing-content {
+		max-width: 420px;
+	}
+	.pricing-content .bgrid {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.set-pad {
+    padding-top:35px;
+}
+.set-row-pad {
+    padding-top:30px;
+    padding-bottom:50px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 70px;
+}
+
+
+.navbar-inverse {
+    border-color: transparent;
+}
+
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #FFF;
+        padding: 22px 10px;
+    }
+
+
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/header.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .home-sec .overlay {
+        background: rgba(38, 57, 88, 0.89);
+        min-height: 500px;
+    }
+
+    .home-sec h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .home-sec h3 {
+        text-transform: uppercase;
+    }
+
+
+
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+
+.flex-control-nav {
+    display: none!important;
+}
+
+.set-flexi a {
+    margin: 5px;
+}
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #E9E9E9;
+    color: #000;
+}
+
+    .tag-line h2 {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 10px 10px 5px;
+        color: #005E5A;
+    }
+
+        .tag-line h2 > i {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+
+h1::after {
+    content: " ";
+    border: solid 2px #2f9484;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+.about-div {
+    padding: 30px;
+}
+
+.icon-round-border {
+    border: 10px double #1A94C4;
+    color: #2f9484;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .icon-round-border:hover {
+        color: #fff;
+        border: 10px double #fff;
+        background-color: #1A94C4;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-div p {
+    padding-top: 10px;
+}
+
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+}
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+#faculty-sec {
+    background-color: #000;
+    color: #fff;
+}
+
+    #faculty-sec .header-line {
+        color: #fff;
+    }
+.faculty-div h4 {
+    line-height:30px;
+    font-weight:700;
+}
+.faculty-div {
+    padding: 30px;
+}
+
+    .faculty-div hr {
+        border: 1px solid #1A94C4;
+    }
+
+    .faculty-div h3 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .faculty-div p {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .faculty-div img {
+        border: 10px double #fff;
+    }
+
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#contact-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #contact-sec h1 {
+        color:#fff;
+    }
+#contact-sec .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+/*==howit style==*/
+#howit-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#howit-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #howit-sec h1 {
+        color:#fff;
+    }
+#howit-sec .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+/*=======*/
+#priceit-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/header.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#priceit-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #priceit-sec h1 {
+        color:#fff;
+    }
+#priceit-sec .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+#footer {
+    padding:5px 20px;
+    background-color:#2d3d5a;
+    text-align:right;
+    color:#fff;
+    font-size:15px;
+}
